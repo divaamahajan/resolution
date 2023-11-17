@@ -4,7 +4,7 @@ import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import {workExperiences} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
-import ConflictManagementImage from "./Conflict_Management.avif";
+import ConflictManagementImage from "./Conflict_Management.jpeg";
 import ConflictResolutionStrategies from "./ConflictResolutionStrategies";
 
 export default function WorkExperience() {
