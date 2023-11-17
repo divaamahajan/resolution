@@ -6,6 +6,8 @@ import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import YouTubeEmbed from "../../components/videoThumbnail/YouTubeEmbed";
+import VideoThumbnail from "../../components/videoThumbnail/VideoThumbnail";
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);
@@ -13,10 +15,11 @@ export default function Skills() {
     return null;
   }
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="skills">
+    <div className={isDark ? "dark-mode main" : "main"} id="problem">
       <div className="skills-main-div">
-        <Fade left duration={1000}>
-          <div className="skills-image-div">
+        {/* <Fade left duration={1000}>
+          <YouTubeEmbed videoId="_1ZyNsKvkhQ"/> */}
+        {/* <div className="skills-image-div">
             {illustration.animated ? (
               <DisplayLottie animationData={codingPerson} />
             ) : (
@@ -25,10 +28,11 @@ export default function Skills() {
                 src={require("../../assets/images/developerActivity.svg")}
               ></img>
             )}
-          </div>
-        </Fade>
-        <Fade right duration={1000}>
-          <div className="skills-text-div">
+          </div> */}
+
+        {/* </Fade> */}
+        <div className="skills-text-div">
+          <Fade right duration={1000}>
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
@@ -43,25 +47,26 @@ export default function Skills() {
             >
               {skillsSection.subTitle}
             </p>
-            <SoftwareSkill />
+          </Fade>
+          {/* <SoftwareSkill /> */}
+          <Fade left duration={1000}>
+            <YouTubeEmbed videoId="_1ZyNsKvkhQ" />
+          </Fade>
+          <Fade right duration={1000}>
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
                   <p
                     key={i}
-                    className={
-                      isDark
-                        ? "dark-mode subTitle skills-text"
-                        : "subTitle skills-text"
-                    }
+                    className={isDark ? "dark-mode skills-text" : "skills-text"}
                   >
                     {skills}
                   </p>
                 );
               })}
             </div>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
       </div>
     </div>
   );

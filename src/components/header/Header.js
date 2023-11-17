@@ -7,6 +7,7 @@ import {
   greeting,
   workExperiences,
   skillsSection,
+  educationInfo,
   openSource,
   blogSection,
   talkSection,
@@ -16,6 +17,7 @@ import {
 function Header() {
   const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
+  const viewEducation = educationInfo.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
@@ -41,37 +43,42 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#problem">Problem Articulation</a>
+            </li>
+          )}
+          {viewEducation && (
+            <li>
+              <a href="#genderCompetencies">Gender Competencies</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#conflictResolution">Conflict Resolution</a>
             </li>
           )}
-          {viewOpenSource && (
+          {/* {viewOpenSource && (
             <li>
               <a href="#opensource">Open Source</a>
             </li>
-          )}
-          {viewAchievement && (
+          )} */}
+          {/* {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
             </li>
-          )}
-          {viewBlog && (
+          )} */}
+          {/* {viewBlog && (
             <li>
               <a href="#blogs">Blogs</a>
             </li>
-          )}
+          )} */}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#conclusion">Conclusion</a>
             </li>
           )}
-          <li>
+          {/* <li>
             <a href="#contact">Contact Me</a>
-          </li>
+          </li> */}
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a>

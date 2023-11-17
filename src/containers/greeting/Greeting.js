@@ -5,7 +5,9 @@ import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
+import ContactUs from "../../components/contactUs/ContactUs";
 import Button from "../../components/button/Button";
+import group from "./group.png";
 
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
@@ -26,7 +28,7 @@ export default function Greeting() {
               >
                 {" "}
                 {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+                {/* <span className="wave-emoji">{emoji("👋")}</span> */}
               </h1>
               <p
                 className={
@@ -37,8 +39,9 @@ export default function Greeting() {
               >
                 {greeting.subTitle}
               </p>
-              <SocialMedia />
-              <div className="button-greeting-div">
+              {/* <SocialMedia /> */}
+              <ContactUs/>
+              {/* <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <Button
@@ -47,18 +50,11 @@ export default function Greeting() {
                     href={greeting.resumeLink}
                   />
                 )}
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
+            <img src={group} alt="Collaborate" />
           </div>
         </div>
       </div>

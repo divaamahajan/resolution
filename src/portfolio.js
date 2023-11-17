@@ -20,10 +20,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Enginnering Collaborations",
+  title: "🌐 Bridging Gender Competencies: Effective Conflict Resolution 🤝",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Explore how understanding and integrating gender competencies can lead to more effective conflict resolution in professional settings. Discover various conflict resolution approaches influenced by the clash and alignment of Individualistic and Relational Competencies. This exploration highlights the significance of recognizing and leveraging diverse competencies for fostering collaboration, innovation, and cohesive team dynamics in the workplace."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -48,75 +48,28 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Problem Articulation",
+  subTitle:
+    "Navigating Competency Clashes: Sarah and Debby's Workplace Conflict",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡The workplace dynamic between Sarah, a junior engineer, and Debby, a senior architect, encapsulates a clash of Individualistic and Relational Competencies, leading to significant challenges. Sarah's reliance on collaboration, synergy thinking, and inclusive decision-making, typical of Relational Competencies, contrasts with Debby's assertive, independent, and goal-oriented approach, embodying Individualistic Competencies."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ The core issue emerges from the clash between these competency sets during critical situations, like the client call incident. Sarah's emphasis on collaborative problem-solving and adapting to change conflicts with Debby's unilateral decision-making and compartmentalized working style. This incongruity resulted in confusion, miscommunication, and Sarah feeling overwhelmed and undervalued in front of the client, affecting her confidence and hampering team cohesion."
+    ),
+    emoji(
+      "⚡ The conflict is exacerbated by inadequate communication, unclear role expectations, and the absence of a collaborative framework within the team. Sarah's need for a supportive, inclusive environment clashes with Debby's inclination towards transactional exchanges, compartmentalization, and adherence to strict rules and rights."
+    ),
+    emoji(
+      "⚡ To address this, a transformation in communication strategies, role clarity, and fostering a collaborative work environment is crucial. Establishing transparent channels for dialogue, acknowledging and leveraging the strengths of both competency sets, and creating opportunities for mutual learning and adaptation are key. Bridging the gap between Individualistic and Relational Competencies within the team is essential for fostering a cohesive, innovative, and productive work culture that honors diverse approaches and maximizes the potential of each team member."
     )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
-  softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
+  softwareSkills: [],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -126,23 +79,38 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Individualistic Competencies",
+      logo: require("./assets/images/individualistic.png"),
+      subHeader:
+        "These competencies focus on an individual's approach to work, problem-solving, and decision-making.",
+      // duration: "September 2017 - April 2019",
+      // desc:
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Individualistic competencies encapsulate diverse approaches to work and conflict resolution.",
+        "'Transactors' view work as transactional, exchanging rewards or punishment, adopting a competitive win/lose mindset.",
+        "'Logical Thinking/Mechanistic Systems' prioritize logic-based decision-making with narrow focus and data-driven thinking.",
+        "'Firefighters' act heroically, prioritize singular tasks, and view customer service as problematic.",
+        "'Universality for continuity' emphasizes rules, goal-driven results, and negotiations for power.",
+        "These competencies showcase a range of traits from strict adherence to rules to self-reliance, directive decision-making, and compartmentalized teamwork, all aimed at achieving individual intelligence and developmental roles."
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Relational competencies",
+      logo: require("./assets/images/relational.png"),
+      subHeader:
+        "Relational competencies represent a spectrum of approaches pivotal in collaborative work settings and conflict resolution. ",
+      // duration: "September 2013 - April 2017",
+      // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      descBullets: [
+        "'Interactors/Transformers' focus on aligning individual interests with group objectives, emphasizing shared power, and nurturing internal excellence.",
+        "They foster a win/win mindset, believing that collective synergy surpasses individual contributions.",
+        "'Systems-Thinking/Organic Systems' thinkers perceive interconnectedness among parts, valuing relationships and human experiences to foster high-context collaboration.",
+        "Employing inductive reasoning, they collaboratively build ideas and advocate for holistic decision-making.",
+        "'Fire-preventers' prioritize listening, empathizing, and engaging in customer-centric improvements, acting on multiple tasks simultaneously to foster innovation.",
+        "Flexibility in adapting to change and process-oriented continuous improvements are their hallmarks.",
+        "They negotiate for connections, mutual wins, and strategic thinking tied to evolving processes.",
+        "These competencies emphasize cross-functional collaboration, information-sharing, inclusive decision-making, and empowering others through mentorship, fostering a culture of collective intelligence and integration within teams."
+      ]
     }
   ]
 };
@@ -174,29 +142,52 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      role: "Individualistic Competencies",
+      company: "Competing",
+      companylogo: require("./assets/images/competition.png"),
+      link: "https://www.youtube.com/watch?v=nWxMF6vzCRk",
+      date: "Importance of : Goal \u2B06️ | Relationship \u2B07️",
+      desc: "Sarah challenges Debby during the client call, asserting her perspective about the project approach. She confronts Debby professionally, standing her ground despite feeling overwhelmed, showcasing an assertive approach aligned with Individualistic Competencies."
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Relational Competencies",
+      company: "Collaborating",
+      companylogo: require("./assets/images/collaborate.png"),
+      link: "https://www.youtube.com/watch?v=_BiEB6Bs8cs",
+      date: "Importance of : Goal \u2B06️ | Relationship \u2B06️️",
+      desc: "Sarah initiates an open and transparent conversation with Debby about the challenges she faced. Both Sarah and Debby collaborate to find a solution, expressing their feelings and perspectives openly, emphasizing mutual understanding and a joint commitment to improve the situation, highlighting the importance of collaborative and inclusive decision-making, a hallmark of Relational Competencies."
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Individualistic Competencies",
+      company: "Avoiding",
+      companylogo: require("./assets/images/Avoid.png"),
+      link: "https://www.youtube.com/watch?v=2jhJFs5Gl08",
+      date: "Importance of : Goal \u2B07️ | Relationship \u2B07️",
+      desc: "Sarah chooses not to confront the issue directly with Debby after the challenging client call, prioritizing her career shift and avoiding unnecessary conflict or drama. This aligns with an avoidance approach, typical of Individualistic Competencies, focused on preserving personal goals and minimizing disruptive conflicts."
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
+    },
+    {
+      role: "Relational Competencies",
+      company: "Accommodating",
+      companylogo: require("./assets/images/accomodate.png"),
+      link: "https://www.youtube.com/watch?v=MXY2hzWUUUM",
+      date: "Importance of : Goal \u2B07️  | Relationship \u2B06️️",
+      desc: "Sarah accommodates Debby's decisions and actions, maintaining a positive outlook. She adapts to the situation, prioritizing team harmony and focusing on learning from the experience, reflecting a collaborative and adaptive stance consistent with Relational Competencies."
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     }
   ]
 };
@@ -330,18 +321,18 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: "Conclusion",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "The clash between Sarah's Relational Competencies and Debby's Individualistic Competencies highlighted the challenge posed by differing gender competency sets in the workplace. This conflict, evident during critical moments like the client call incident, led to miscommunication and undermined team cohesion. The divergence between these competencies—Sarah's collaborative approach versus Debby's unilateral, rule-bound style—resulted in confusion and affected Sarah's confidence. Inadequate communication and unclear role expectations aggravated the situation. Addressing this required a shift in communication strategies and fostering a collaborative environment that blends the strengths of both competency sets. Recognizing and leveraging diverse competencies is crucial for a cohesive and innovative workplace culture that maximizes each team member's potential. The conflict resolution approaches displayed by Sarah showcased the influence of these gender competencies, emphasizing the need to appreciate and integrate diverse competencies for a more harmonious and productive work environment. Integrating these competencies lays the foundation for an inclusive organizational culture that thrives on diversity."
   ),
 
   talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
+    // {
+    //   title: "Build Actions For Google Assistant",
+    //   subtitle: "Codelab at GDG DevFest Karachi 2019",
+    //   slides_url: "https://bit.ly/saadpasta-slides",
+    //   event_url: "https://www.facebook.com/events/2339906106275053/"
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -360,11 +351,11 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  // title: emoji("Contact Me ☎️"),
+  // subtitle:
+  //   "Discuss a project or just want to say hi? My Inbox is open for all.",
+  // number: "+92-0000000000",
+  // email_address: "saadpasta70@gmail.com"
 };
 
 // Twitter Section

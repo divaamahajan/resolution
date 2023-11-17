@@ -8,11 +8,7 @@ export default function EducationCard({school}) {
 
   const GetDescBullets = ({descBullets}) => {
     return descBullets
-      ? descBullets.map((item, i) => (
-          <li key={i} className="subTitle">
-            {item}
-          </li>
-        ))
+      ? descBullets.map((item, i) => <li key={i}>{item}</li>)
       : null;
   };
   const {isDark} = useContext(StyleContext);
@@ -28,7 +24,7 @@ export default function EducationCard({school}) {
               <img
                 crossOrigin={"anonymous"}
                 ref={imgRef}
-                className="education-roundedimg"
+                // className="education-roundedimg"
                 src={school.logo}
                 alt={school.schoolName}
               />
