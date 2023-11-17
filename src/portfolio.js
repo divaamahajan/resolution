@@ -143,6 +143,18 @@ const workExperiences = {
   experience: [
     {
       role: "Individualistic Competencies",
+      company: "Avoiding",
+      companylogo: require("./assets/images/Avoid.png"),
+      link: "https://www.youtube.com/watch?v=34EoYptWld0",
+      date: "Importance of : Goal \u2B07️ | Relationship \u2B07️",
+      desc: "Sarah chooses not to confront the issue directly with Debby after the challenging client call, prioritizing her career shift and avoiding unnecessary conflict or drama. This aligns with an avoidance approach, typical of Individualistic Competencies, focused on preserving personal goals and minimizing disruptive conflicts."
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
+    },
+    {
+      role: "Individualistic Competencies",
       company: "Competing",
       companylogo: require("./assets/images/competition.png"),
       link: "https://www.youtube.com/watch?v=nWxMF6vzCRk",
@@ -155,23 +167,11 @@ const workExperiences = {
     },
     {
       role: "Relational Competencies",
-      company: "Collaborating",
-      companylogo: require("./assets/images/collaborate.png"),
-      link: "https://www.youtube.com/watch?v=_BiEB6Bs8cs",
-      date: "Importance of : Goal \u2B06️ | Relationship \u2B06️️",
-      desc: "Sarah initiates an open and transparent conversation with Debby about the challenges she faced. Both Sarah and Debby collaborate to find a solution, expressing their feelings and perspectives openly, emphasizing mutual understanding and a joint commitment to improve the situation, highlighting the importance of collaborative and inclusive decision-making, a hallmark of Relational Competencies."
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
-    },
-    {
-      role: "Individualistic Competencies",
-      company: "Avoiding",
-      companylogo: require("./assets/images/Avoid.png"),
-      link: "https://www.youtube.com/watch?v=34EoYptWld0",
-      date: "Importance of : Goal \u2B07️ | Relationship \u2B07️",
-      desc: "Sarah chooses not to confront the issue directly with Debby after the challenging client call, prioritizing her career shift and avoiding unnecessary conflict or drama. This aligns with an avoidance approach, typical of Individualistic Competencies, focused on preserving personal goals and minimizing disruptive conflicts."
+      company: "Accommodating",
+      companylogo: require("./assets/images/accomodate.png"),
+      link: "https://www.youtube.com/watch?v=MXY2hzWUUUM",
+      date: "Importance of : Goal \u2B07️  | Relationship \u2B06️️",
+      desc: "Sarah accommodates Debby's decisions and actions, maintaining a positive outlook. She adapts to the situation, prioritizing team harmony and focusing on learning from the experience, reflecting a collaborative and adaptive stance consistent with Relational Competencies."
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -179,11 +179,11 @@ const workExperiences = {
     },
     {
       role: "Relational Competencies",
-      company: "Accommodating",
-      companylogo: require("./assets/images/accomodate.png"),
-      link: "https://www.youtube.com/watch?v=MXY2hzWUUUM",
-      date: "Importance of : Goal \u2B07️  | Relationship \u2B06️️",
-      desc: "Sarah accommodates Debby's decisions and actions, maintaining a positive outlook. She adapts to the situation, prioritizing team harmony and focusing on learning from the experience, reflecting a collaborative and adaptive stance consistent with Relational Competencies."
+      company: "Collaborating",
+      companylogo: require("./assets/images/collaborate.png"),
+      link: "https://www.youtube.com/watch?v=_BiEB6Bs8cs",
+      date: "Importance of : Goal \u2B06️ | Relationship \u2B06️️",
+      desc: "Sarah initiates an open and transparent conversation with Debby about the challenges she faced. Both Sarah and Debby collaborate to find a solution, expressing their feelings and perspectives openly, emphasizing mutual understanding and a joint commitment to improve the situation, highlighting the importance of collaborative and inclusive decision-making, a hallmark of Relational Competencies."
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
