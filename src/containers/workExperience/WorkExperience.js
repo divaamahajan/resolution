@@ -33,7 +33,7 @@ export default function WorkExperience() {
                   <Fade left duration={1000} distance="100px">
                     <div className="image-container" style={{flex: 1}}>
                       <img
-                        src={ConflictManagementImage}
+                        src="https://images.ctfassets.net/pdf29us7flmy/3d9OPmQHZzkruB9f3vnWwo/dfe23ea143faff68e74aa860e08a3a20/-IND-001-019-_What_is_Conflict_Management__Final.jpg?w=720&q=100&fm=avif"
                         alt="Conflict Management"
                         style={{width: "75%", height: "auto"}}
                       />
