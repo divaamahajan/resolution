@@ -1,7 +1,7 @@
 .experience-cards-div {
   display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  grid-template-columns: repeat(2, 1fr); /* Display 2 cards in a row */
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  // grid-template-columns: repeat(2, 1fr); /* Display 2 cards in a row */
   gap: 1rem 1rem;
   margin-left: 50px; /* Left margin */
   margin-right: 50px; /* Right margin */
