@@ -169,7 +169,7 @@ const workExperiences = {
       role: "Individualistic Competencies",
       company: "Avoiding",
       companylogo: require("./assets/images/Avoid.png"),
-      link: "https://www.youtube.com/watch?v=2jhJFs5Gl08",
+      link: "https://www.youtube.com/watch?v=34EoYptWld0",
       date: "Importance of : Goal \u2B07️ | Relationship \u2B07️",
       desc: "Sarah chooses not to confront the issue directly with Debby after the challenging client call, prioritizing her career shift and avoiding unnecessary conflict or drama. This aligns with an avoidance approach, typical of Individualistic Competencies, focused on preserving personal goals and minimizing disruptive conflicts."
       // descBullets: [
