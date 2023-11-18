@@ -157,7 +157,7 @@ const workExperiences = {
       role: "Individualistic Competencies",
       company: "Competing",
       companylogo: require("./assets/images/competition.png"),
-      link: "https://www.youtube.com/watch?v=nWxMF6vzCRk",
+      link: "https://www.youtube.com/watch?v=JKBPgQ1tK68",
       date: "Importance of : Goal \u2B06️ | Relationship \u2B07️",
       desc: "Sarah challenges Debby during the client call, asserting her perspective about the project approach. She confronts Debby professionally, standing her ground despite feeling overwhelmed, showcasing an assertive approach aligned with Individualistic Competencies."
       // descBullets: [
