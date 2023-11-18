@@ -4,10 +4,13 @@ function ConflictResolutionStrategies() {
   const style = {
     marginLeft: "20px" // Adjust the value as needed
   };
+  const style2 = {
+    lineHeight: "1.5" // Adjust the value as needed
+  };
 
   return (
     <div>
-      <h2>Individualistic Competencies</h2>
+      <h2 style={style2}>Individualistic Competencies</h2>
       <h3 style={style}>Avoiding</h3>
       {/* <p style={style}>
         This strategy involves disregarding conflict, often chosen when
@@ -52,7 +55,7 @@ function ConflictResolutionStrategies() {
           approaches.
         </li>
       </ul>
-      <h2>Relational Competencies</h2>
+      <h2 style={style2}>Relational Competencies</h2>
 
       <h3 style={style}>Accommodating</h3>
       {/* <p style={style}>
@@ -101,7 +104,8 @@ function ConflictResolutionStrategies() {
         </li>
         <li>
           <strong>
-            Emphasizing cross-functix onal collaboration and information-sharing:
+            Emphasizing cross-functix onal collaboration and
+            information-sharing:
           </strong>{" "}
           Collaborative approaches, like "Collaborating," are aligned with the
           emphasis on cross-functional collaboration and inclusive
@@ -109,9 +113,7 @@ function ConflictResolutionStrategies() {
           on collective intelligence and integration within teams.
         </li>
       </ul>
-      <h2>
-        <h2>Individualistic-Relational Competencies</h2>
-      </h2>
+      <h2 style={style2}>Individualistic-Relational Competencies</h2>
       <h3 style={style}>Compromising</h3>
       <p style={style}>
         A lose-lose strategy where both parties sacrifice some needs to reach an
