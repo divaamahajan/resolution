@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
+import ExperienceCard from "../../components/experienceCard/ExperienceCard";
+import StyleContext from "../../contexts/StyleContext";
+import {Fade} from "react-reveal";
+import {workExperiences} from "../../portfolio";
 
 function ConflictResolutionStrategies() {
+  const {isDark} = useContext(StyleContext);
   const style = {
     marginLeft: "20px" // Adjust the value as needed
   };
@@ -10,58 +15,76 @@ function ConflictResolutionStrategies() {
 
   return (
     <div>
+    <Fade right duration={1000} distance="100px">
       <h2 style={style2}>Individualistic Competencies</h2>
-      <h3 style={style}>Avoiding</h3>
-      {/* <p style={style}>
-        This strategy involves disregarding conflict, often chosen when
-        individuals seek to steer clear of engagement or when there's no
-        immediate resolution. It can lead to unresolved issues and potential
-        friction between parties.
-      </p> */}
-      <ul>
-        <li>
-          <strong>Self-reliance and Directive Decision-making:</strong> Choosing
-          to avoid conflict independently without engaging in immediate
-          resolution.
-        </li>
-        <li>
-          <strong>Narrow Focus and Goal-driven Results:</strong> The focus is on
-          steering clear of engagement or immediate resolution to achieve
-          personal goals.
-        </li>
-      </ul>
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
+  <div style={{ flex: 1 }}>
+    <h3 style={style}>Avoiding</h3>
+    <p style={style}>Is both unassertive and uncooperative. In this mode, you work to sidestep the conflict without attempting to satisfy either individual’s concerns. </p>
+    <ul>
+      <li>
+        <strong>Self-reliance and Directive Decision-making:</strong> Choosing to avoid conflict independently without engaging in immediate resolution.
+      </li>
+      <li>
+        <strong>Narrow Focus and Goal-driven Results:</strong> The focus is on steering clear of engagement or immediate resolution to achieve personal goals.
+      </li>
+    </ul>
+    <h3 style={style}>Competing</h3>
+    <p style={style}>Is assertive and uncooperative. In this mode, you try to satisfy your own concerns at the other person’s expense. </p>
+    <ul>
+      <li>
+        <strong>An assertive and uncooperative method:</strong> This resonates with the competitive and win/lose mindset associated with "Transactors" who view work as transactional, often adopting a competitive approach to conflicts where winning becomes a priority.
+      </li>
+      <li>
+        <strong>Tends to lead to an unsatisfactory resolution without room for collaboration:</strong> This description reflects the trait of prioritizing singular tasks and lacking collaboration, which is akin to the behavior of "Firefighters" who prioritize individual tasks and may overlook collaborative approaches.
+      </li>
+    </ul>
+  </div>
+  <div className="experience-cards-div" style={{ flex: 2 }}>
+    {workExperiences.experience.slice(0, 2).map((card, i) => (
+      <ExperienceCard
+        key={i}
+        isDark={isDark}
+        cardInfo={{
+          company: card.company,
+          desc: card.desc,
+          date: card.date,
+          companylogo: card.companylogo,
+          link: card.link,
+          role: card.role,
+          descBullets: card.descBullets
+        }}
+      />
+    ))}
+  </div>
+</div>
 
-      <h3 style={style}>Competing</h3>
-      {/* <p style={style}>
-        An assertive and uncooperative method where winning becomes the
-        priority. It tends to lead to an unsatisfactory resolution without room
-        for collaboration.
-      </p> */}
-      <ul>
-        <li>
-          <strong>An assertive and uncooperative method:</strong> This resonates
-          with the competitive and win/lose mindset associated with
-          "Transactors" who view work as transactional, often adopting a
-          competitive approach to conflicts where winning becomes a priority.
-        </li>
-        <li>
-          <strong>
-            Tends to lead to an unsatisfactory resolution without room for
-            collaboration:
-          </strong>{" "}
-          This description reflects the trait of prioritizing singular tasks and
-          lacking collaboration, which is akin to the behavior of "Firefighters"
-          who prioritize individual tasks and may overlook collaborative
-          approaches.
-        </li>
-      </ul>
+</Fade>
+<Fade left duration={1000} distance="100px">
+
       <h2 style={style2}>Relational Competencies</h2>
 
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
+  <div className="experience-cards-div"style={{ flex: 1 }}>
+  {workExperiences.experience.slice(2, 4).map((card, i) => (
+    <ExperienceCard
+      key={i}
+      isDark={isDark}
+      cardInfo={{
+        company: card.company,
+        desc: card.desc,
+        date: card.date,
+        companylogo: card.companylogo,
+        link: card.link,
+        role: card.role,
+        descBullets: card.descBullets
+      }}
+    />
+  ))}
+</div>
+  <div style={{ flex: 1 }}>
       <h3 style={style}>Accommodating</h3>
-      {/* <p style={style}>
-        Also known as smoothing, this involves conceding to resolve the
-        immediate problem, though it might not address long-term solutions.
-      </p> */}
+      <p style={style}>Is unassertive and cooperative. In this mode, you try to satisfy the other person’s concerns at the expense of your own concerns. </p>
       <ul>
         <li>
           <strong>
@@ -79,11 +102,7 @@ function ConflictResolutionStrategies() {
       </ul>
 
       <h3 style={style}>Collaborating</h3>
-      {/* <p style={style}>
-        Requires working together to find mutually agreeable solutions,
-        fostering a win-win scenario. It involves both parties in
-        problem-solving.
-      </p> */}
+      <p style={style}>Is both assertive and cooperative. In this mode, you try to find a win-win solution that completely satisfies the concerns of both individuals involved. </p>
       <ul>
         <li>
           <strong>
@@ -113,13 +132,22 @@ function ConflictResolutionStrategies() {
           on collective intelligence and integration within teams.
         </li>
       </ul>
+</div>
+</div>
+
+</Fade>
+
+<Fade bottom duration={1000} distance="100px">
+
       <h2 style={style2}>Individualistic-Relational Competencies</h2>
       <h3 style={style}>Compromising</h3>
       <p style={style}>
+      Is intermediate in both assertiveness and cooperativeness. In this mode, you try to find an acceptable solution that only partially satisfies both individual’s concerns. 
         A lose-lose strategy where both parties sacrifice some needs to reach an
         agreement swiftly. It's a temporary fix to avoid further conflict until
         a more permanent solution can be implemented.
       </p>
+</Fade>
     </div>
   );
 }
